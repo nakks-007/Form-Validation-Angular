@@ -1,0 +1,32 @@
+.main {
+
+    border: 1px solid black;
+    height: 600px;
+    width: 400px;
+    margin-left: 200px;
+    background-color: gray;
+    
+}
+
+.inputs input {
+    display: block;
+    margin: 10px 0;
+    width: 300px;
+}
+
+.inputs {
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.inputs button{
+
+    width: 300px;
+    margin-top: 10px;
+    background-color: blue;
+}
+
+p{
+
+    color: red;
+}

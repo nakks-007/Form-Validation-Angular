@@ -1,0 +1,23 @@
+<div class = "main">
+
+  <div class = "inputs">
+    <label for="Name">Name</label>
+    <input type="text" placeholder="Enter the name" [(ngModel)] = "values.name">
+    <p *ngIf = "names">Please Enter the Correct Name</p>
+    <label for="Email">Email</label>
+    <input type="text" placeholder="Enter the Email" [(ngModel)] = "values.email">
+    <p *ngIf = "emails">Please Enter the correct Email</p>
+    <label for="Mobile No">Mobile No</label>
+    <input type="text" placeholder="Enter the Mobile Number"  [(ngModel)] = "values.mobile">
+    <p *ngIf = "numbers">Please Enter the Number</p>
+    <label for="">Date Of Birth</label>
+    <input type="date" [(ngModel)] = "values.date">
+    <p *ngIf = "dates">Please Enter the correct Date</p>
+    <label for="password">Image</label>
+    <input type="file" [(ngModel)] ="values.image" (change) = "events($event)">
+    <p *ngIf = "images">Image File Cannot be Uploaded</p>
+    <p *ngIf>Please Upload the Small image</p>
+    <button (click) = "Submit()">Submit</button>
+  </div>
+  
+</div>
